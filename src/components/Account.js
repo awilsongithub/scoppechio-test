@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-function Footer() {
-	return <p>footer works</p>;
+function Account() {
+	return <p>Account works</p>;
 }
 
-export default Footer;
+export default Account;

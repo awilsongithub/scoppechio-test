@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-function Footer() {
-	return <p>footer works</p>;
+function Support() {
+	return <p>Support works</p>;
 }
 
-export default Footer;
+export default Support;
