@@ -1,0 +1,10 @@
+/**
+THEMING BOOTSTRAP PER THESE INSTRUCTIONS 
+https://create-react-app.dev/docs/adding-bootstrap/
+*/
+
+// Override default variables before the import
+$body-bg: pink;
+
+// Import Bootstrap and its default variables
+@import "~bootstrap/scss/bootstrap.scss";

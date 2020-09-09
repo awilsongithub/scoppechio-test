@@ -1,13 +1,79 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+		"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+		"Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	overflow-x: hidden; /* avoid horizontal scrollbars */
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
+
+footer {
+	background: yellow;
+}
+.fullwidth-video-wrapper {
+	height: 50vh;
+	display: flex;
+	align-items: center;
+	min-height: 250px;
+	position: relative;
+}
+
+.fullwidth-video-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.fullwidth-video-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #4d23ff;
+	opacity: 0.3;
+	z-index: 1;
+}
+
+.fullwidth-video-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: 2;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+}
+
+.sign-up-card {
+}
+
+@media (max-width: 576px) {
+	.fullwidth-video-wrapper {
+		height: 100vh;
+	}
+	.fullwidth-video-video,
+	.fullwidth-video-overlay {
+		height: 75%;
+	}
+
+	.fullwidth-video-content {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	.sign-up-card {
+	}
 }

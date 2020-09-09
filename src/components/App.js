@@ -12,7 +12,7 @@ import Support from "./Support";
 
 function App() {
 	return (
-		<div className='container-fluid mt-3'>
+		<div>
 			<Navbar />
 			<Switch>
 				<Route path='/' exact component={Home} />
