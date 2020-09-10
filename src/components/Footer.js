@@ -1,22 +1,25 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import FooterNav from "./FooterNav";
 import SocialIconList from "./SocialIconList";
 
 function Footer() {
 	return (
-		<footer>
-			<div className='row'>
-				<div className='col-md-6'>
-					<FooterNav />
+		<footer data-aos='fade-down'>
+			<div className='container color-off-white'>
+				<div className='spacer p-4'></div>
+				<div className='row pt-3 footer-nav-row'>
+					<div className='col-md-6'>
+						<h4 className='title-bold '>HELP</h4>
+						<FooterNav />
+					</div>
+					<div className='col-md-6 d-flex justify-content-end align-items-end pr-0'>
+						<SocialIconList />
+					</div>
 				</div>
-				<div className='col-md-6'>
-					<SocialIconList />
-				</div>
-			</div>
-			<div className='row'>
-				<div className='col d-flex justify-content-center'>
-					@2020 Test Page
+				<div className='row'>
+					<div className='col d-flex justify-content-center pt-4 pb-4'>
+						@2020 Test Page
+					</div>
 				</div>
 			</div>
 		</footer>

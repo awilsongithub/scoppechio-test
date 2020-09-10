@@ -1,9 +1,8 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 
 function SignupCard() {
 	return (
-		<div className='card sign-up-card shadow mb-5'>
+		<div className='card sign-up-card mb-5'>
 			<div className='card-body'>
 				<h3 className='card-title'>SIGN UP</h3>
 				<p className='card-text'>
@@ -13,12 +12,12 @@ function SignupCard() {
 					<div className='form-group'>
 						<input
 							type='email'
-							className='form-control'
+							className='form-control form-control-lg'
 							placeholder='Email Address'
 						></input>
 					</div>
 					<button type='submit' className='btn btn-primary'>
-						Submit
+						Sign Up
 					</button>
 				</form>
 			</div>

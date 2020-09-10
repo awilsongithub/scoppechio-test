@@ -1,12 +1,90 @@
+@import "~aos/dist/aos.css";
+/* 
+NOTE: USE IMPORTED FONTS AS FOLLOWS: 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Pathway Gothic One', sans-serif;
+font-family: 'Roboto', sans-serif; 
+*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Pathway+Gothic+One&family=Roboto:wght@400;700;900&display=swap");
+
+:root {
+	--box-shadow-default: 10px 10px 30px rgba(0, 0, 0, 0.2);
+	--font-copy: "Montserrat", sans-serif;
+	--font-title: "Pathway Gothic One", sans-serif;
+	--font-title-bold: "Roboto", sans-serif;
+	--font-off-white: #f8f8ff;
+	--bg-blue: #4d23ff;
+	--bg-purple: #263063;
+	/* 
+    * bg-blue-gradient gradient generated from design spec 
+    * navbar color at https://cssgradient.io/ 
+    */
+	--bg-blue-gradient: linear-gradient(
+		90deg,
+		rgba(48, 12, 127, 1) 0%,
+		rgba(72, 37, 224, 1) 48%,
+		rgba(22, 34, 243, 1) 100%
+	);
+	--bg-purple-gradient: linear-gradient(
+		90deg,
+		rgba(33, 44, 96, 1) 0%,
+		rgba(38, 48, 99, 1) 48%,
+		rgba(35, 53, 147, 1) 100%
+	);
+
+	--font-lighter: #444444;
+}
+
 body {
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-		"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-		"Helvetica Neue", sans-serif;
+	font-family: var(--font-copy);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+.btn {
+	font-family: var(--font-title);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-title);
+	font-weight: bold;
+}
+.navbar-dark,
+footer,
+.btn-primary {
+	background: var(--bg-blue-gradient);
+}
+.color-off-white {
+	color: var(--font-off-white);
+}
 
-	overflow-x: hidden; /* avoid horizontal scrollbars */
+.media-object {
+	padding-top: 50px;
+	padding-bottom: 75px;
+}
+
+.media-object:nth-child(even) {
+	background: var(--bg-purple-gradient);
+	color: var(--font-off-white);
+}
+.media-object:nth-child(odd) {
+	background: white;
+	color: var(--font-lighter);
+}
+.title-bold {
+	font-family: var(--font-title-bold);
+}
+.footer-nav-row {
+	border-top: 2px solid #5a68b7;
+}
+.icon {
+	height: 50px;
+	width: 50px;
+	color: var(--font-off-white);
 }
 
 code {
@@ -14,11 +92,8 @@ code {
 		monospace;
 }
 
-footer {
-	background: yellow;
-}
 .fullwidth-video-wrapper {
-	height: 50vh;
+	height: 66vh;
 	display: flex;
 	align-items: center;
 	min-height: 250px;
@@ -40,7 +115,7 @@ footer {
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
-	background: #4d23ff;
+	background: #263063;
 	opacity: 0.3;
 	z-index: 1;
 }
@@ -59,11 +134,78 @@ footer {
 }
 
 .sign-up-card {
+	width: 400px;
+	text-align: center;
+	height: 332px;
+	padding-top: 25px;
+	width: 350px;
+}
+
+/*
+   .sSSSSSSSSs.   .sSSS SSSSS .sSSSSs.    .sSSSsSS SSsSSSSS .sSSSSs.
+.sSSSSSSSSSSSSSs. SSSSS SSSSS SSSSSSSSSs. SSSSS  SSS  SSSSS SSSSSSSSSs.
+SSSSS S SSS SSSSS S SSS SSSSS S SSS SSSS' S SSS   S   SSSSS S SSS SSSS'
+SSSSS S  SS SSSSS S  SS SSSSS S  SS       S  SS       SSSSS S  SS
+`:S:' S..SS `:S:' S..SSsSSSSS S..SSsss    S..SS       SSSSS S..SSsss
+      S:::S       S:::S SSSSS S:::SSSS    S:::S       SSSSS S:::SSSS
+      S;;;S       S;;;S SSSSS S;;;S       S;;;S       SSSSS S;;;S
+      S%%%S       S%%%S SSSSS S%%%S SSSSS S%%%S       SSSSS S%%%S SSSSS
+      SSSSS       SSSSS SSSSS SSSSSsSS;:' SSSSS       SSSSS SSSSSsSS;:'
+
+*/
+.card-title {
+	font-size: 42px;
+	color: #444444;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.card {
+	border-radius: 11px;
+	box-shadow: var(--box-shadow-default);
+	font-family: var(--font-copy);
+}
+
+.btn {
+	font-size: 22px;
+	color: var(--font-off-white);
+	font-weight: bold;
+	text-transform: uppercase;
+	border-radius: 100px;
+	min-width: 135px;
+}
+
+li.nav-item,
+.social-icon-list,
+li.nav-item a,
+.navbar-dark .navbar-nav .nav-link {
+	font-family: var(--font-copy);
+	font-size: 20px;
+	font-weight: 500;
+	color: var(--font-off-white);
+	padding: 10px 14px 10px 14px;
+}
+
+/*
+.sSSSsSS SSsSSSSS .sSSSSs.    .sSSSSs.    SSSSS .sSSSSs.
+SSSSS  SSS  SSSSS SSSSSSSSSs. SSSSSSSSSs. SSSSS SSSSSSSSSs.
+S SSS   S   SSSSS S SSS SSSS' S SSS SSSSS S SSS S SSS SSSSS
+S  SS       SSSSS S  SS       S  SS SSSSS S  SS S  SS SSSSS
+S..SS       SSSSS S..SSsss    S..SS SSSSS S..SS S..SSsSSSSS
+S:::S       SSSSS S:::SSSS    S:::S SSSSS S:::S S:::S SSSSS
+S;;;S       SSSSS S;;;S       S;;;S SSSSS S;;;S S;;;S SSSSS
+S%%%S       SSSSS S%%%S SSSSS S%%%S SSSS' S%%%S S%%%S SSSSS
+SSSSS       SSSSS SSSSSsSS;:' SSSSSsS;:'  SSSSS SSSSS SSSSS
+
+*/
+@media (max-width: 992px) {
+	.video {
+		max-width: 1210px;
+	}
 }
 
 @media (max-width: 576px) {
 	.fullwidth-video-wrapper {
-		height: 100vh;
+		height: 90vh;
 	}
 	.fullwidth-video-video,
 	.fullwidth-video-overlay {
@@ -75,5 +217,39 @@ footer {
 		align-items: center;
 	}
 	.sign-up-card {
+		width: unset;
+	}
+	div.media-object-text {
+		padding-top: 40px;
+	}
+	.media-object {
+		padding-top: 0;
+	}
+
+	.media-object-image {
+		/* full width on mobile */
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.navbar-brand {
+		/* center navbar robot brand icon on mobile */
+		margin-left: calc(50% - 25px);
+	}
+	.navbar-nav {
+		padding-top: 25px;
+		padding-bottom: 50px;
 	}
 }
+
+/*     
+    .media-object:nth-child(even) div. {
+
+    } */
+/** 
+    ONLY PERFORM THIS LOGIC ON LARGER SCREENS
+    HTML ORDERING DRIVES IT ON SMALLER WHERE IMG ALWAYS IS FIRST
+
+    obj nth even div.image > float: left
+    odd           div.image > float: right
+    obj.nth even div.text > float: left
+    */

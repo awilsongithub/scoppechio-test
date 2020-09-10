@@ -2,14 +2,21 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "bootstrap/js/src/collapse.js";
+import robotIcon from "../media/002-robot-head.svg";
 
 function Navbar() {
 	return (
-		<nav className='navbar navbar-expand-lg navbar-light bg-light'>
+		<nav className='navbar navbar-expand-lg navbar-dark'>
 			<div className='container'>
 				<NavLink to='/' exact className='navbar-brand'>
-					Robot
+					<img
+						src={robotIcon}
+						alt='robot brand icon'
+						className='icon-nav-icon'
+					></img>
 				</NavLink>
+
+				{/* <div> */}
 				<button
 					className='navbar-toggler'
 					type='button'
@@ -21,30 +28,34 @@ function Navbar() {
 				>
 					<span className='navbar-toggler-icon'></span>
 				</button>
-				<div className='collapse navbar-collapse' id='navBarNav'>
-					<ul className='navbar-nav'>
+				<div
+					className='collapse navbar-collapse flex-row-reverse'
+					id='navBarNav'
+				>
+					<ul className='navbar-nav align-items-center'>
 						<li className='nav-item'>
 							<NavLink to='/community' exact className='nav-link'>
-								Community
+								COMMUNITY
 							</NavLink>
 						</li>
 						<li className='nav-item'>
 							<NavLink to='/store' exact className='nav-link'>
-								Store
+								STORE
 							</NavLink>
 						</li>
 						<li className='nav-item'>
 							<NavLink to='/support' exact className='nav-link'>
-								Support
+								SUPPORT
 							</NavLink>
 						</li>
 						<li className='nav-item'>
 							<NavLink to='/account' exact className='nav-link'>
-								Account
+								ACCOUNT
 							</NavLink>
 						</li>
 					</ul>
 				</div>
+				{/* </div> */}
 			</div>
 		</nav>
 	);
