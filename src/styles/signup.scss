@@ -1,0 +1,16 @@
+.sign-up-card {
+	width: 350px;
+	height: 332px;
+	text-align: center;
+	padding-top: 25px;
+
+	input {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 576px) {
+	.sign-up-card {
+		width: unset;
+	}
+}

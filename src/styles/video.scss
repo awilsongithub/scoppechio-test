@@ -1,0 +1,50 @@
+.fullwidth-video-wrapper {
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: 66vh;
+	min-height: 250px;
+
+	.fullwidth-video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+
+	.fullwidth-video-overlay {
+		background: #263063;
+		opacity: 0.3;
+		z-index: 1;
+	}
+
+	.fullwidth-video-content {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		z-index: 2;
+	}
+}
+
+@media (max-width: 992px) {
+	.video {
+		max-width: 1210px;
+	}
+}
+@media (max-width: 576px) {
+	.fullwidth-video-wrapper {
+		height: 90vh;
+
+		.fullwidth-video-video,
+		.fullwidth-video-overlay {
+			height: 75%;
+		}
+
+		.fullwidth-video-content {
+			flex-direction: column-reverse;
+			align-items: center;
+		}
+	}
+}

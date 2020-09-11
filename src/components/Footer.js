@@ -4,8 +4,11 @@ import SocialIconList from "./SocialIconList";
 
 function Footer() {
 	return (
-		<footer data-aos='fade-down'>
-			<div className='container color-off-white'>
+		<footer
+			data-aos='fade-down'
+			className='color-off-white bg-primary-gradient'
+		>
+			<div className='container '>
 				<div className='spacer p-4'></div>
 				<div className='row pt-3 footer-nav-row'>
 					<div className='col-md-6'>

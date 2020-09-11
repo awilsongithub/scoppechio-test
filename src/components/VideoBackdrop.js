@@ -10,15 +10,15 @@ function VideoBackdrop() {
 	}, []);
 	return (
 		<div className='fullwidth-video-wrapper'>
-			<div className='fullwidth-video-video'>
+			<div className='fullwidth-video fullwidth-video-video'>
 				{/* video may not autoplay if not muted */}
 				<video autoPlay='true' loop='true' muted className='video'>
 					<source src={video} type='video/mp4'></source>
 					Your browser does not support the video tag.
 				</video>
 			</div>
-			<div className='fullwidth-video-overlay'></div>
-			<div className='fullwidth-video-content '>
+			<div className='fullwidth-video fullwidth-video-overlay'></div>
+			<div className='fullwidth-video fullwidth-video-content'>
 				<div className='container d-flex justify-content-end'>
 					<SignupCard />
 				</div>

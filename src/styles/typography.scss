@@ -1,0 +1,24 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font-title;
+	font-weight: bold;
+}
+
+.title-bold {
+	font-family: $font-title-bold;
+}
+
+li.nav-item,
+.social-icon-list,
+li.nav-item a,
+.navbar-dark .navbar-nav .nav-link {
+	font-family: $font-copy;
+	font-size: 20px;
+	font-weight: 500;
+	color: $font-off-white;
+	padding: 10px 14px 10px 14px;
+}

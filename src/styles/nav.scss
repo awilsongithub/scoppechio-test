@@ -1,0 +1,10 @@
+@media (max-width: 576px) {
+	.navbar-brand {
+		/* center navbar robot brand icon on mobile */
+		margin-left: calc(50% - 25px);
+	}
+	.navbar-nav {
+		padding-top: 25px;
+		padding-bottom: 50px;
+	}
+}

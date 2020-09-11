@@ -6,7 +6,7 @@ import robotIcon from "../media/002-robot-head.svg";
 
 function Navbar() {
 	return (
-		<nav className='navbar navbar-expand-lg navbar-dark'>
+		<nav className='navbar navbar-expand-lg bg-primary-gradient'>
 			<div className='container'>
 				<NavLink to='/' exact className='navbar-brand'>
 					<img

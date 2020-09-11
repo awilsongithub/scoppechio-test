@@ -1,0 +1,31 @@
+/* ===================== 
+        FONTS 
+======================= */
+$font-copy: "Montserrat", sans-serif;
+$font-title: "Pathway Gothic One", sans-serif;
+$font-title-bold: "Roboto", sans-serif;
+$font-off-white: #f8f8ff;
+$font-lighter: #444444;
+
+/* ===================== 
+        COLORS
+======================= */
+$bg-blue: #4d23ff;
+$bg-purple: #263063;
+$bg-blue-gradient: linear-gradient(
+	90deg,
+	rgba(44, 59, 129, 1) 0%,
+	rgba(77, 35, 255, 1) 48%,
+	rgba(99, 62, 253, 1) 100%
+);
+$bg-purple-gradient: linear-gradient(
+	90deg,
+	rgba(33, 44, 96, 1) 0%,
+	rgba(38, 48, 99, 1) 48%,
+	rgba(35, 53, 147, 1) 100%
+);
+
+/* ===================== 
+        OTHER
+======================= */
+$box-shadow-default: 10px 10px 30px rgba(0, 0, 0, 0.2);
