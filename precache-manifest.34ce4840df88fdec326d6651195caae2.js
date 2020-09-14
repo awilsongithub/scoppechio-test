@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4e94bc20d3bd1e7f618e26aedf5d5c3a",
+    "revision": "834a0b28ef8e9873da3ccda9c2fbf6e0",
     "url": "/scoppechio-test/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/scoppechio-test/static/css/2.bf003f1a.chunk.css"
   },
   {
-    "revision": "e1f067b066ad44ad2619",
+    "revision": "f94377895386cdbd023e",
     "url": "/scoppechio-test/static/css/main.0fbee40f.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/scoppechio-test/static/js/2.7e350e62.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e1f067b066ad44ad2619",
-    "url": "/scoppechio-test/static/js/main.4f4a8528.chunk.js"
+    "revision": "f94377895386cdbd023e",
+    "url": "/scoppechio-test/static/js/main.14f4b729.chunk.js"
   },
   {
     "revision": "8aa32621da84e01d4cb7",
