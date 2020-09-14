@@ -16,9 +16,11 @@ function SignupCard() {
 							placeholder='Email Address'
 						></input>
 					</div>
-					<button type='submit' className='btn btn-primary'>
-						Sign Up
-					</button>
+					<div className='d-flex justify-content-center'>
+						<button type='submit' className='btn btn-primary'>
+							Sign Up
+						</button>
+					</div>
 				</form>
 			</div>
 		</div>

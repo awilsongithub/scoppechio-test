@@ -4,3 +4,18 @@
 .color-off-white {
 	color: $font-off-white;
 }
+
+.input-opaque,
+.input-opaque.form-control:focus {
+	max-width: 400px;
+	min-width: 400px;
+	color: white;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+input.input-opaque::-webkit-input-placeholder {
+	color: white; /*Change the placeholder color*/
+	opacity: 0.5; /*Change the opacity between 0 and 1*/
+}
+
+// @media (max-width)

@@ -17,6 +17,10 @@
 		justify-content: center;
 		display: flex;
 	}
+
+	.col {
+		padding-left: 25px;
+	}
 }
 
 @media (max-width: 576px) {

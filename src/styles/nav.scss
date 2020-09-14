@@ -1,3 +1,20 @@
+/** override default bootstrap bg image */
+.navbar-dark {
+	.navbar-toggler.collapsed .navbar-toggler-icon {
+		background-image: url(../media/hamburger_icon.svg);
+	}
+	.navbar-toggler .navbar-toggler-icon {
+		background-image: url(../media/cancel_icon.svg);
+	}
+	button.navbar-toggler:focus {
+		outline: unset;
+	}
+}
+
+.navbar-dark .navbar-toggler-icon {
+	background-image: url(../media/hamburger_icon.svg);
+}
+
 @media (max-width: 576px) {
 	.navbar-brand {
 		/* center navbar robot brand icon on mobile */

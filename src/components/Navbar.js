@@ -6,7 +6,7 @@ import robotIcon from "../media/002-robot-head.svg";
 
 function Navbar() {
 	return (
-		<nav className='navbar navbar-expand-lg bg-primary-gradient'>
+		<nav className='navbar navbar-expand-lg bg-primary-gradient navbar-dark'>
 			<div className='container'>
 				<NavLink to='/' exact className='navbar-brand'>
 					<img
@@ -18,7 +18,7 @@ function Navbar() {
 
 				{/* <div> */}
 				<button
-					className='navbar-toggler'
+					className='navbar-toggler collapsed'
 					type='button'
 					data-toggle='collapse'
 					data-target='#navBarNav'

@@ -25,6 +25,11 @@
 		flex-direction: row-reverse;
 		align-items: center;
 		z-index: 2;
+		color: white;
+
+		h1 {
+			text-transform: uppercase;
+		}
 	}
 }
 
@@ -39,11 +44,11 @@
 
 		.fullwidth-video-video,
 		.fullwidth-video-overlay {
-			height: 75%;
+			// height: 75%;
 		}
 
 		.fullwidth-video-content {
-			flex-direction: column-reverse;
+			// flex-direction: column-reverse;
 			align-items: center;
 		}
 	}

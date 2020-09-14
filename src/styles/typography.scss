@@ -4,12 +4,13 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: $font-title;
+	font-family: $font-title-bold;
 	font-weight: bold;
 }
 
 .title-bold {
 	font-family: $font-title-bold;
+	padding-bottom: 0.6em;
 }
 
 li.nav-item,
