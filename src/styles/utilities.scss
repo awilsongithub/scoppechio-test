@@ -11,11 +11,21 @@
 	min-width: 400px;
 	color: white;
 	background-color: rgba(255, 255, 255, 0.1);
+
+	&::-webkit-input-placeholder {
+		color: white;
+		opacity: 0.5;
+	}
+
+	@media (max-width: 576px) {
+		max-width: 90vw;
+		min-width: 90vw;
+	}
 }
 
-input.input-opaque::-webkit-input-placeholder {
-	color: white; /*Change the placeholder color*/
-	opacity: 0.5; /*Change the opacity between 0 and 1*/
-}
+// input.input-opaque::-webkit-input-placeholder {
+// 	color: white; /*Change the placeholder color*/
+// 	opacity: 0.5; /*Change the opacity between 0 and 1*/
+// }
 
 // @media (max-width)

@@ -1,15 +1,16 @@
-.sign-up-card {
-	width: 350px;
-	padding-top: 15px;
-	padding-bottom: 15px;
+// .sign-up-form {
+// 	width: 350px;
+// 	padding-top: 15px;
+// 	padding-bottom: 15px;
 
-	input {
-		font-size: 16px;
-	}
-}
-
-@media (max-width: 576px) {
-	.sign-up-card {
-		width: unset;
+// 	input {
+// 		font-size: 16px;
+// 	}
+// }
+.sign-up-form {
+	@media (max-width: 576px) {
+		button.btn {
+			width: 90vw;
+		}
 	}
 }

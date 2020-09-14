@@ -5,6 +5,13 @@
 	height: 66vh;
 	min-height: 250px;
 
+	@media (max-width: 576px) {
+		height: calc(100vh - 74px);
+		.video {
+			height: calc(100vh - 74px);
+		}
+	}
+
 	.fullwidth-video {
 		position: absolute;
 		top: 0;
@@ -30,25 +37,8 @@
 		h1 {
 			text-transform: uppercase;
 		}
-	}
-}
 
-@media (max-width: 992px) {
-	.video {
-		max-width: 1210px;
-	}
-}
-@media (max-width: 576px) {
-	.fullwidth-video-wrapper {
-		height: 90vh;
-
-		.fullwidth-video-video,
-		.fullwidth-video-overlay {
-			// height: 75%;
-		}
-
-		.fullwidth-video-content {
-			// flex-direction: column-reverse;
+		@media (max-width: 576px) {
 			align-items: center;
 		}
 	}

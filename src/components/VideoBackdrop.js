@@ -23,11 +23,11 @@ function VideoBackdrop() {
 					<h1>
 						Sign up for a chance to win a free copy of Halo Infinite
 					</h1>
-					<form className='form-inline'>
+					<form className='form-inline sign-up-form'>
 						<div className='form-group'>
 							<input
 								type='email'
-								className='form-control form-control-lg input-opaque mr-2 mb-2'
+								className='form-control form-control-lg input-opaque mr-2'
 								placeholder='Email Address'
 							></input>
 						</div>

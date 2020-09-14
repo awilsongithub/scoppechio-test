@@ -11,7 +11,7 @@ export default class MediaObjectList extends React.Component {
 		};
 	}
 
-	#mediaUrl = "http://api.staging.scoppechiohosting.com/interview-test/index.json";
+	#mediaUrl = "https://api.staging.scoppechiohosting.com/interview-test/index.json";
 
 	componentDidMount() {
 		fetch(this.#mediaUrl)
