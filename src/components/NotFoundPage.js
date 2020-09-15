@@ -6,7 +6,7 @@ export default function NotFoundPage() {
 		<div className='container mb-5 mt-5'>
 			<h1>404. Page Not Found</h1>
 			<NavLink to='/' exact className='nav-link'>
-				Back to homepage
+				<button className='btn btn-primary'>Back to homepage</button>
 			</NavLink>
 		</div>
 	);

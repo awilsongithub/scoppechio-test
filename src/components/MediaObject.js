@@ -5,7 +5,7 @@ export default function MediaObject(props) {
 	const evenRow = props.index % 2 === 0;
 	let mobile = window.innerWidth <= 576;
 
-	let image = (
+	let imageColumn = (
 		<div className='col-md-6 media-object-image'>
 			<div className='float-right'>
 				<img
@@ -17,14 +17,17 @@ export default function MediaObject(props) {
 		</div>
 	);
 
-	let text = (
+	let textColumn = (
 		<div className='col-md-6 media-object-text'>
 			<h3 className='title-bold'>{props.obj.headline}</h3>
 			<p>{props.obj.copy}</p>
 		</div>
 	);
 
-	let rowContent = mobile || evenRow ? [image, text] : [text, image];
+	let rowContent =
+		mobile || evenRow
+			? [imageColumn, textColumn]
+			: [textColumn, imageColumn];
 
 	return (
 		<div className='media-object' data-aos='fade-up'>

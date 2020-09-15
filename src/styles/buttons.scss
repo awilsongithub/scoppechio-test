@@ -1,12 +1,11 @@
 .btn {
 	font-size: 20px;
-	color: $font-off-white;
 	font-weight: 500;
 	text-transform: uppercase;
-	// border-radius: 100px;
 	min-width: 160px;
 }
 
 .btn-primary {
 	background: $bg-blue-gradient;
+	color: $font-off-white;
 }

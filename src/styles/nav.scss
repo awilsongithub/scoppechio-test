@@ -6,9 +6,9 @@
 	.navbar-toggler .navbar-toggler-icon {
 		background-image: url(../media/cancel_icon.svg);
 	}
-	button.navbar-toggler:focus {
-		outline: unset;
-	}
+	// button.navbar-toggler:focus {
+	// 	outline: unset; // accessibility anti-pattern
+	// }
 }
 
 .navbar-dark .navbar-toggler-icon {

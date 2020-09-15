@@ -1,6 +1,6 @@
 import React from "react";
 
-function SignupCard() {
+export default function SignupCard() {
 	return (
 		<div className='card sign-up-card mb-5'>
 			<div className='card-body'>
@@ -26,5 +26,3 @@ function SignupCard() {
 		</div>
 	);
 }
-
-export default SignupCard;

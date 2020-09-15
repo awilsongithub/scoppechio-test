@@ -1,22 +1,19 @@
-// import react, navlink, write functional component that returns the jsx
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "bootstrap/js/src/collapse.js";
 import robotIcon from "../media/002-robot-head.svg";
+import "bootstrap/js/src/collapse.js";
 
-function Navbar() {
+export default function Navbar() {
 	return (
 		<nav className='navbar navbar-expand-lg bg-primary-gradient navbar-dark'>
 			<div className='container'>
 				<NavLink to='/' exact className='navbar-brand'>
 					<img
 						src={robotIcon}
-						alt='robot brand icon'
+						alt='brand icon link to home page'
 						className='icon-nav-icon'
 					></img>
 				</NavLink>
-
-				{/* <div> */}
 				<button
 					className='navbar-toggler collapsed'
 					type='button'
@@ -55,10 +52,7 @@ function Navbar() {
 						</li>
 					</ul>
 				</div>
-				{/* </div> */}
 			</div>
 		</nav>
 	);
 }
-
-export default Navbar;

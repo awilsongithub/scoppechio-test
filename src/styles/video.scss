@@ -7,7 +7,11 @@
 
 	@media (max-width: 576px) {
 		height: calc(100vh - 74px);
-		.video {
+	}
+
+	.video {
+		min-width: 100%;
+		@media (max-width: 768px) {
 			height: calc(100vh - 74px);
 		}
 	}
@@ -33,13 +37,12 @@
 		align-items: center;
 		z-index: 2;
 		color: white;
+		@media (max-width: 576px) {
+			align-items: center;
+		}
 
 		h1 {
 			text-transform: uppercase;
-		}
-
-		@media (max-width: 576px) {
-			align-items: center;
 		}
 	}
 }

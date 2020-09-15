@@ -1,10 +1,9 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import facebookIcon from "../media/social-icons/FB_Icon_Red.svg";
 import twitterIcon from "../media/social-icons/Twitter_Icon_Red.svg";
 import instagramIcon from "../media/social-icons/IG_Icon_Red.svg";
 
-function SocialIconList() {
+export default function SocialIconList() {
 	return (
 		<div className='d-flex align-items-center social-icon-list'>
 			<span className='social-icon-list'>Follow Us</span>
@@ -26,5 +25,3 @@ function SocialIconList() {
 		</div>
 	);
 }
-
-export default SocialIconList;
